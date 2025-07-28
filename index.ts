@@ -17,7 +17,7 @@ app.get('/test', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-	res.render('/home');
+	res.redirect('/home');
 });
 
 const port = process.env.PORT || 3000;
