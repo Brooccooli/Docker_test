@@ -6,13 +6,13 @@ app.set('view engine', 'pug');
 
 app.get('/home', (req, res) => {
 	res.render('index', {
-		page = 'home',
+		page: 'home',
 	});
 });
 
 app.get('/test', (req, res) => {
 	res.render('index', {
-		page = 'test',
+		page: 'test',
 	});
 });
 
