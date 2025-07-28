@@ -1,10 +1,16 @@
-body
-	.wrap
-		.information
-			h1.information__page
-				small=page
-				| #{page}
-
-#message
-	h1 Hello World
-	h3 pug's in the house
+doctype html
+html
+	head
+		title=page
+		link(rel='stylesheet', href='/styles/style.css')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+	body
+		.wrap
+			.information
+				h1.information__page
+					small=page
+					h1 you are now on the #{page} page
+		#message
+			h1 Hello World
+			h3 pug's in the house
+	script(src='js/script.js')
